@@ -1,0 +1,5 @@
+/build/
+/core/target/
+*.log
+*.user
+.vscode/
