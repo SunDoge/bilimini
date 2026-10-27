@@ -46,7 +46,7 @@ core/                Rust sidecar
 ## Plico 前端实验
 
 新增独立的 Rust/Plico 前端，默认使用 Skia，复用 `core` API 与现有登录缓存。
-执行 `./run-plico.sh`；详细说明、功能边界和本地 Plico 路径依赖见 [plico/README.md](plico/README.md)。
+执行 `./run-plico.sh`；详细说明、功能边界和固定的 Plico Git 依赖见 [plico/README.md](plico/README.md)。
 原有 Qt/QML 构建与启动方式不变；新前端的许可证单独见该目录。
 
 ## 构建

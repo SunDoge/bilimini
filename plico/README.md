@@ -6,10 +6,9 @@ launcher remain available. This frontend defaults to the **Skia Vulkan** rendere
 ## Run
 
 Requires Rust, libmpv (including its linker library), and the usual Plico native
-window/font dependencies. This development experiment references a sibling Plico
-checkout at `code/projects/plico` from `code/rust/bilimini`. Change the manifest's
-relative path dependencies if your checkout layout differs. There are no source
-symlinks or absolute user paths in the package.
+window/font dependencies. Plico dependencies are fetched from Git and pinned to a tested commit in
+`Cargo.toml` and `Cargo.lock`. A separate local Plico checkout is not required.
+The shared `bili-core` API remains a path dependency within this repository.
 
 ```sh
 ./run-plico.sh

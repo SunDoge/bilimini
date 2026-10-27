@@ -13,11 +13,11 @@ skia = ["plico-vello/skia"]
 
 [dependencies]
 bili-core = { path = "../core" }
-plico-core = { path = "../../../projects/plico/crates/plico-core" }
-plico-vello = { path = "../../../projects/plico/crates/plico-vello", default-features = false }
-plico-renderer = { path = "../../../projects/plico/crates/plico-renderer" }
-plico-shell = { path = "../../../projects/plico/crates/plico-shell" }
-plico-video = { path = "../../../projects/plico/crates/plico-video", features = ["mpv"] }
+plico-core = { git = "https://github.com/SunDoge/plico", rev = "a357a65d55e3f0acde1a8ed66f6d9fe532362e06" }
+plico-vello = { git = "https://github.com/SunDoge/plico", rev = "a357a65d55e3f0acde1a8ed66f6d9fe532362e06", default-features = false }
+plico-renderer = { git = "https://github.com/SunDoge/plico", rev = "a357a65d55e3f0acde1a8ed66f6d9fe532362e06" }
+plico-shell = { git = "https://github.com/SunDoge/plico", rev = "a357a65d55e3f0acde1a8ed66f6d9fe532362e06" }
+plico-video = { git = "https://github.com/SunDoge/plico", rev = "a357a65d55e3f0acde1a8ed66f6d9fe532362e06", features = ["mpv"] }
 reqwest = { version = "0.13", default-features = false, features = ["rustls"] }
 tokio = { version = "1", features = ["rt", "time", "net", "sync", "macros"] }
 serde = { version = "1", features = ["derive"] }

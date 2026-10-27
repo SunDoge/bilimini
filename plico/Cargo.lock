@@ -4044,6 +4044,7 @@ checksum = "b4596b6d070b27117e987119b4dac604f3c58cfb0b191112e24771b2faeac1a6"
 [[package]]
 name = "plico-core"
 version = "0.1.5"
+source = "git+https://github.com/SunDoge/plico?rev=a357a65d55e3f0acde1a8ed66f6d9fe532362e06#a357a65d55e3f0acde1a8ed66f6d9fe532362e06"
 dependencies = [
  "bitflags 2.13.2",
  "plico-macros",
@@ -4060,6 +4061,7 @@ dependencies = [
 [[package]]
 name = "plico-dev"
 version = "0.1.5"
+source = "git+https://github.com/SunDoge/plico?rev=a357a65d55e3f0acde1a8ed66f6d9fe532362e06#a357a65d55e3f0acde1a8ed66f6d9fe532362e06"
 dependencies = [
  "plico-core",
  "rmp-serde",
@@ -4072,6 +4074,7 @@ dependencies = [
 [[package]]
 name = "plico-macros"
 version = "0.1.5"
+source = "git+https://github.com/SunDoge/plico?rev=a357a65d55e3f0acde1a8ed66f6d9fe532362e06#a357a65d55e3f0acde1a8ed66f6d9fe532362e06"
 dependencies = [
  "proc-macro-crate",
  "proc-macro2",
@@ -4082,6 +4085,7 @@ dependencies = [
 [[package]]
 name = "plico-motion"
 version = "0.1.5"
+source = "git+https://github.com/SunDoge/plico?rev=a357a65d55e3f0acde1a8ed66f6d9fe532362e06#a357a65d55e3f0acde1a8ed66f6d9fe532362e06"
 dependencies = [
  "serde",
  "serde_json",
@@ -4091,6 +4095,7 @@ dependencies = [
 [[package]]
 name = "plico-renderer"
 version = "0.1.5"
+source = "git+https://github.com/SunDoge/plico?rev=a357a65d55e3f0acde1a8ed66f6d9fe532362e06#a357a65d55e3f0acde1a8ed66f6d9fe532362e06"
 dependencies = [
  "bitflags 2.13.2",
  "bytemuck",
@@ -4123,6 +4128,7 @@ dependencies = [
 [[package]]
 name = "plico-runtime"
 version = "0.1.5"
+source = "git+https://github.com/SunDoge/plico?rev=a357a65d55e3f0acde1a8ed66f6d9fe532362e06#a357a65d55e3f0acde1a8ed66f6d9fe532362e06"
 dependencies = [
  "kurbo",
  "parley",
@@ -4143,6 +4149,7 @@ dependencies = [
 [[package]]
 name = "plico-shell"
 version = "0.1.5"
+source = "git+https://github.com/SunDoge/plico?rev=a357a65d55e3f0acde1a8ed66f6d9fe532362e06#a357a65d55e3f0acde1a8ed66f6d9fe532362e06"
 dependencies = [
  "accesskit",
  "accesskit_xplat",
@@ -4179,6 +4186,7 @@ dependencies = [
 [[package]]
 name = "plico-skia"
 version = "0.1.5"
+source = "git+https://github.com/SunDoge/plico?rev=a357a65d55e3f0acde1a8ed66f6d9fe532362e06#a357a65d55e3f0acde1a8ed66f6d9fe532362e06"
 dependencies = [
  "ash",
  "ash-window",
@@ -4195,6 +4203,7 @@ dependencies = [
 [[package]]
 name = "plico-vello"
 version = "0.1.5"
+source = "git+https://github.com/SunDoge/plico?rev=a357a65d55e3f0acde1a8ed66f6d9fe532362e06#a357a65d55e3f0acde1a8ed66f6d9fe532362e06"
 dependencies = [
  "plico-core",
  "plico-dev",
@@ -4209,6 +4218,7 @@ dependencies = [
 [[package]]
 name = "plico-video"
 version = "0.1.5"
+source = "git+https://github.com/SunDoge/plico?rev=a357a65d55e3f0acde1a8ed66f6d9fe532362e06#a357a65d55e3f0acde1a8ed66f6d9fe532362e06"
 dependencies = [
  "libmpv2",
  "libmpv2-sys",
