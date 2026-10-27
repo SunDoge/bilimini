@@ -114,8 +114,15 @@ async fn health() -> Json<Value> {
     }))
 }
 
-async fn feed(State(state): State<AppState>) -> (StatusCode, Json<Value>) {
-    match state.bili.feed().await {
+async fn feed(
+    State(state): State<AppState>,
+    Query(params): Query<HashMap<String, String>>,
+) -> (StatusCode, Json<Value>) {
+    let fresh_idx = params
+        .get("fresh_idx")
+        .and_then(|value| value.parse::<u32>().ok())
+        .unwrap_or(1);
+    match state.bili.feed(fresh_idx).await {
         Ok(items) => (
             StatusCode::OK,
             Json(json!({ "items": items, "error": null })),

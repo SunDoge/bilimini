@@ -85,11 +85,16 @@ impl Bili {
             .clone()
     }
 
-    pub async fn feed(&self) -> Result<Vec<Value>> {
+    pub async fn feed(&self, fresh_idx: u32) -> Result<Vec<Value>> {
+        // `fresh_idx` is the refresh counter the web UI increments on every
+        // scroll; each value returns a new batch of recommendations.
+        let params = VideoHomepageRecommendationsParams::new()
+            .fresh_idx(fresh_idx.max(1))
+            .map_err(anyhow::Error::msg)?;
         let data = self
             .client()
             .video()
-            .homepage_recommendations(VideoHomepageRecommendationsParams::new())
+            .homepage_recommendations(params)
             .await
             .map_err(anyhow::Error::msg)
             .context("fetch homepage recommendations")?;
