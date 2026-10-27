@@ -56,6 +56,12 @@ struct DanmakuEntry {
     text: String,
 }
 
+impl Default for Bili {
+    fn default() -> Self {
+        Self::new()
+    }
+}
+
 impl Bili {
     pub fn new() -> Self {
         let auth_path = auth_path();

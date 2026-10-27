@@ -4,8 +4,6 @@
 //! (`{"port":..,"token":..,"pid":..}`) and then talks HTTP on loopback. Every
 //! request must carry `Authorization: Bearer <token>`.
 
-mod bili;
-
 use std::collections::HashMap;
 use std::io::Write;
 use std::sync::Arc;
@@ -20,7 +18,7 @@ use axum::{
 };
 use serde_json::{Value, json};
 
-use bili::Bili;
+use bili_core::bili::Bili;
 
 #[derive(Clone)]
 struct AppState {
